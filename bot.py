@@ -145,7 +145,7 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "AbhiModszYT_Return"
+channel = "serrtfhs"
 menu = '''
 ┏━━━━━━━━━❥
 ┣ Cʀᴇᴀᴛᴇʀ -> @am_YTbott
